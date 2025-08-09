@@ -1,0 +1,80 @@
+.join-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-image: url('news-letter-bg.png'); /* Replace with your actual background image URL */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+  }
+  
+  .content-wrapper {
+    background-color: rgba(0, 0, 0, 0.4); /* Optional: Adds a subtle overlay for better text readability */
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  .join-message {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .email-input {
+    width: 300px;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  }
+  
+  .subscribe-btn {
+    background-color: #ff6a00; /* Example color from the image */
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subscribe-btn:hover {
+    background-color: #e55c00;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .join-message {
+        font-size: 1.8rem;
+    }
+    
+    .input-container {
+        flex-direction: column;
+    }
+  
+    .email-input {
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+  
+    .subscribe-btn {
+        width: 100%;
+        border-radius: 5px;
+    }
+  }
+  
