@@ -1,0 +1,108 @@
+/* Footer Section Styling */
+.footer-section {
+    background-color: #fff;
+    color: #333;
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding:auto;
+    gap: 40px;
+  }
+  
+  /* Left side (Logo and description) */
+  .footer-logo-description {
+    max-width: 250px;
+  }
+  
+  .footer-logo {
+    height: auto;
+    margin-bottom: 15px;
+    /* এখানে আপনার লোগোর আসল মাপ ব্যবহার করুন */
+  }
+  
+  .footer-logo-description p {
+    font-size: 0.9rem;
+    line-height: 1.1;
+    margin:1px ;
+    padding: 0px ;
+  }
+  
+  /* Center (Navigation links) */
+  .footer-links-group {
+    display: flex;
+    gap: 80px;
+  }
+  
+  .footer-links-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links-column ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links-column ul li a:hover {
+    color: #ff8c42; /* Hover color similar to previous section */
+  }
+  
+  /* Right side (Social media icons) */
+  .footer-social-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .footer-social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer-social-icons img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+  
+    .footer-logo-description {
+        max-width: 100%;
+    }
+  
+    .footer-logo {
+        margin-bottom: 10px;
+    }
+  
+    .footer-links-group {
+        flex-direction: column;
+        gap: 20px;
+    }
+  
+    .footer-social-icons {
+        justify-content: center;
+    }
+  }
